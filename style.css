@@ -1,0 +1,33 @@
+h1, h2 {
+    color: blue;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+  text-align: center;
+}
+h1{ font-size: 8em; }
+h2{ font-size: 5em; }
+
+  div {
+      background-color: red;
+      width: 300px;
+      border: 50px solid red;
+      padding: 50px;
+      margin: 50px;
+      text-align: center;
+  }
+
+body{
+    font-family: arial;
+    font-size: 80%;
+    line-height: 1.2em;
+    width: 100%; margin: 0;
+    background: #eee;
+    text-align: center;
+}
+
+nav{
+	width: 50%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
