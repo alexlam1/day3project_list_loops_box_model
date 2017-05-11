@@ -65,12 +65,41 @@ if (question5.toLowerCase() === 'yes' || question5.toLowerCase() === 'y') {
 
 var sport = ['hockey', 'lacrosse', 'pingpong', 'basketball', 'baseball'];
 var count = 0;
-var sportquestion = prompt('what sport have i played');
+var right;
+var correct = 0;
+
 while (count <= 6) {
-  for (i = 0; i < sport.length; i++)
-    console.log(sport);
-  if (sport[i] === sportquestion){
-    alert('wow!!s! How did you know??');
+  var sportquestion = prompt('what sport have i played').toLowerCase();
+
+  for (i = 0; i < sport.length; i++){
+    console.log(sport[i]);
+    if (sport[i] === sportquestion){
+      alert('wow!!s! How did you know??');
+      right = true;
+      break;
+    }
   }
 
+  if(right){
+    correct++;
+    sport.splice(i, 1);
+  } else {
+    alert('wrong. guess again');
+    count++;
+  }
+  if(correct === 5){
+    break;
+  }
+  console.log('count:' + count);
+  console.log(sport);
+  right = false;
 }
+
+alert('you got ' + correct + ' out of 5');
+if (correct === 5){
+  alert('you got them all. the force is with you.');
+} else if (correct > 2){
+  alert('not bad, padawan');
+}  else {
+    alert('better luck next time!');
+  }
