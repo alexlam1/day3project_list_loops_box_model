@@ -1,0 +1,46 @@
+h1, h2 {
+    color: red;
+	line-height: .9em;
+	margin: 0 0 1em 0;
+  text-align: center;
+}
+h1{ font-size: 10em; }
+h2{ font-size: 3em; }
+
+  div {
+    text-type:
+    background-color: red;
+    margin: 50px auto;
+      border: 50px solid red;
+      padding: 50px;
+      text-align: center;
+  }
+
+body{
+
+  font-family: arial;
+    font-size: 70%;
+    line-height: 2em;
+  margin-top: 30px auto;
+  background: #000fff;
+    text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+p {
+  margin: 50px;
+  border: 2%;
+ background: red;
+  text-align: center;
+}
+
+nav{
+	width: 50%;
+  margin-top: 30px auto;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
