@@ -18,7 +18,7 @@ function q0(){
       alert('too high');
     }
     answer = prompt(user + ', you may guess up to 4 times. Please use the force and focus!');
-}
+  }
 }
 
 function q1(){
@@ -76,46 +76,46 @@ function q5(){
   }
 }
 
-  var sport = ['hockey', 'lacrosse', 'pingpong', 'basketball', 'baseball'];
-  var count = 0;
-  var right;
-  var correct = 0;
+var sport = ['hockey', 'lacrosse', 'pingpong', 'basketball', 'baseball'];
+var count = 0;
+var right;
+var correct = 0;
 
 function sportGame(){
-    while (count <= 6) {
-      var sportquestion = prompt('what sport have i played').toLowerCase();
+  while (count <= 6) {
+    var sportquestion = prompt('what sport have i played').toLowerCase();
 
-      for (var i = 0; i < sport.length; i++){
-        console.log(sport[i]);
-        if (sport[i] === sportquestion){
-          alert('wow!!s! How did you know??');
-          right = true;
-          break;
-        }
-      }
-
-      if(right){
-        correct++;
-        sport.splice(i, 1);
-      } else {
-        alert('wrong. guess again');
-        count++;
-      }
-      if(correct === 5){
+    for (var i = 0; i < sport.length; i++){
+      console.log(sport[i]);
+      if (sport[i] === sportquestion){
+        alert('wow!!s! How did you know??');
+        right = true;
         break;
       }
-      console.log('count:' + count);
-      console.log(sport);
-      right = false;
     }
-    alert('you got ' + correct + ' out of 5');
-    if (correct === 5){
-      alert('you got them all. the force is with you.');
-    } else if (correct > 2){
-      alert('not bad, padawan');
-    }  else {
-        alert('better luck next time!');
-      }
+
+    if(right){
+      correct++;
+      sport.splice(i, 1);
+    } else {
+      alert('wrong. guess again');
+      count++;
+    }
+    if(correct === 5){
+      break;
+    }
+    console.log('count:' + count);
+    console.log(sport);
+    right = false;
+  }
+  alert('you got ' + correct + ' out of 5');
+  if (correct === 5){
+    alert('you got them all. the force is with you.');
+  } else if (correct > 2){
+    alert('not bad, padawan');
+  }  else {
+    alert('better luck next time!');
+  }
 }
 
 q0();
