@@ -3,7 +3,6 @@ var user = prompt('What is your given jedi name?');
 var totalScoreAll = (0);
 console.log('user:' + user);
 
-
 alert('greetings padawan ' + user + ', I\'m master the master of force, I have code to keep you from using extra powers. Lets play a game. 1-10, pick a number! use the force organically and tell me what that number is');
 var answer = prompt(user + ', you may guess up to 4 times. Please use your natural force and focus!');
 for (var i = 0; i < 4; i++) {
@@ -22,7 +21,7 @@ for (var i = 0; i < 4; i++) {
 }
 
 var question1 = prompt('Do I practice the dark side? yes or no');
-console.log('question1:' + question1);
+//console.log('question1:' + question1);
 
 if (question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y') {
   alert('Dark powers MUST be with you');
@@ -32,8 +31,7 @@ if (question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y') {
 }
 
 var question2 = prompt(user + ', lets find out who I really am, Do I practice the force on earth?');
-console.log('question2:' + question2);
-
+//console.log('question2:' + question2);
 if (question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y') {
   alert('Thats violation of the Jedi empire! I follow rules');
 } else {
@@ -42,8 +40,7 @@ if (question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y') {
 }
 
 var question3 = prompt(user + ',you are on the right path, would I train with master Yoda?');
-console.log('question3:' + question3);
-
+//console.log('question3:' + question3);
 if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
   alert('Aha...');
   totalScoreAll++;
@@ -52,7 +49,7 @@ if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
 }
 
 var question4 = prompt(user + ', IS my purpose pure.');
-console.log('question4:' + question4);
+//console.log('question4:' + question4);
 
 if (question4.toLowerCase() === 'yes' || question4.toLowerCase() === 'y') {
   alert('Purity is my goal');
@@ -62,7 +59,7 @@ if (question4.toLowerCase() === 'yes' || question4.toLowerCase() === 'y') {
 }
 
 var question5 = prompt(user + 'do you believe that I am Master Yoda');
-console.log('question5:' + question5);
+//console.log('question5:' + question5);
 
 if (question5.toLowerCase() === 'yes' || question5.toLowerCase() === 'y') {
   alert('Thank you, all though, I am not.');
@@ -81,7 +78,7 @@ while (count1 <= 5) {
       alert('wowser! How did ya do it? You MUST be a jedi');
       totalScoreAll++;
       flag = true;
-      console.log(sport);
+      //console.log(sport);
       break;
     }
   }
